@@ -18,7 +18,7 @@ public class ContentApplication extends Application {
         super.onCreate();
 
         try {
-            stack = Contentstack.stack(ContentApplication.this, "blt920bb7e90248f607", "blt0c4300391e033d4a59eb2857", "production", false);
+            stack = Contentstack.stack(ContentApplication.this, "CONTENTSTACK_API_KEY", "CONTENTSTACK_ACCESS_TOKEN", "ENVIROMENT_NAME");
         } catch (Exception e) {
             e.printStackTrace();
         }
